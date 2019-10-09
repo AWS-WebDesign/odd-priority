@@ -1,0 +1,56 @@
+h1 {
+  color: white;
+  text-shadow: 4px 4px black;
+  text-align: center;
+  font-size: 55px;
+}
+
+body {
+  background-image: url("bg.jpeg");
+  background-size: cover;
+}
+
+.nav{
+  background-color: black;
+}
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  list-style-type: none;
+  background-color: black;
+  float: left;
+}
+
+li a {
+  list-style-type: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  list-style-type: none;
+  background-color: brown;
+}
+
+ p {
+
+  color: black;
+  font-size:22px;
+  font-weight: bold;
+}
+div {
+  background-color: black;
+  color: white;
+  float: inherit;
+}
+</style>
