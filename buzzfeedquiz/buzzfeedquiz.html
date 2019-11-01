@@ -19,7 +19,9 @@
 <br>
 <br>
 <br>
+<!--question for color-->
 <form class="style" method="post">
+  <img src="http://discovermagazine.com/~/media/Images/Issues/2017/November/20-things-color.jpg" alt="color" height="200px" width="250px" align="right">
   <label for="color" id="qs">CHOOSE A COLOR (choose one)</label>
   <br>
   <label for="red">red</label>
@@ -37,11 +39,14 @@
   <label for="white">white</label>
   <input id="white"type="checkbox" name="white">
   <br>
+  <br>
+  <br>
 </form>
 <br>
 <br>
 <br>
 <form class="style" method="post">
+  <img src="https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg" alt="dog" height="200px" width="250px" align="right">
   <label for="animal" id="qs">FAVORITE ANIMAL (choose one)</label>
   <br>
   <label for="dog">dog</label>
@@ -63,7 +68,11 @@
 <br>
 <br>
 <br>
+<br>
+<br>
+<!--this shows one of my questions and its answers-->
 <form class="style" method="post">
+  <img src="https://images-gmi-pmc.edge-generalmills.com/fe558022-4544-458f-aaa0-eda0de1bcf99.jpg" alt="dog" height="200px" width="250px" align="right">
   <label for="DESSERT" id="qs">FAVORITE DESSERT (choose one)</label>
   <br>
   <label for="chocolate mousse">chocolate mousse</label>
@@ -85,7 +94,10 @@
 <br>
 <br>
 <br>
+<br>
+<br>
 <form class="style" method="post">
+  <img src="https://assets.bonappetit.com/photos/5d7284758d926f0009df5cfc/16:9/w_2560%2Cc_limit/Basically-Gojuchang-Chicken-Potato.jpg" alt="dog" height="200px" width="250px" align="right">
   <label for="random" id="qs">JUST CHOOSE ONE</label>
   <br>
   <label for="potato">potato</label>
@@ -111,20 +123,19 @@
 <br>
 <br>
 <br>
+<!--add as input to work, instead of button-->
 <form class="style" method="post">
- <button type="button" value="submit to see results" name="SUBMIT" onclick="showInput();"></button>
+ <input type="button" value="submit to see results" name="SUBMIT" onclick="showInput();">
 </form>
 <br>
 
 <div id="result">
-  <p><span id="user"></span>! <span id="place"></span> Check out other pages for more. </p>
+  <p><span id="user1"></span><span id="place"></span><a href="learnmore.html">click here to learn more</a></p>
 </div>
-
 <script language="JavaScript">
     function showInput() {
         var r = document.getElementById("result");
         r.style.display = "block";
-
         var totes = 0;
         if (document.getElementById("red").checked)
         {
@@ -206,23 +217,24 @@
         {
           totes = totes + 0;
         }
-        if (15 > total > 0) {
+        if (15 > totes) {
         document.getElementById("place").innerHTML = "You should go to Barbados!";
         }
-        if (20 > total > 20) {
+        else if (20 > totes) {
         document.getElementById("place").innerHTML = "You should go to Liechtenstein!";
         }
-        if (30 > total > 30) {
+        else if (30 > totes) {
         document.getElementById("place").innerHTML = "You should go to New York!";
         }
-        if (40 > total > 40) {
+        else if (40 > totes) {
         document.getElementById("place").innerHTML = "You should go to Oklahoma!";
         }
-        if (total > 50) {
+        if (totes > 50) {
         document.getElementById("place").innerHTML = "You should go to Greenland!";
-        }
+
+
       }
+        document.getElementById("user1").innerHTML = document.getElementById("user").value;
+    }
         </script>
-
-
-</html>
+  </html>
