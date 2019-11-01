@@ -9,9 +9,8 @@
 <br>
 <br>
 <form class="style"  method="post">
-  <label for="username">NAME :</label>
+  <label for="username">name :</label>
   <input type="text" name="username" id="user">
-  <input type="button" value="submit" onclick="showInput();">
 </form>
 <br>
 <br>
@@ -20,26 +19,210 @@
 <br>
 <br>
 <br>
-<img src="Unknown-1.jpeg" alt="">
-<img src="images-1.jpeg" alt="">
-<img src="Unknown.png" alt="">
-<img src="Unknown-4.jpeg" alt="">
-<img src="Unknown-3.jpeg" alt="">
-<img src="Unknown-1.png" alt="">
-<img src="Unknown-2.jpeg" alt="">
-<img src="Unknown-5.jpeg" alt="">
-<img src="images.jpeg" alt="">
-<img src="images.png" alt="">
+<form class="style" method="post">
+  <label for="color" id="qs">CHOOSE A COLOR (choose one)</label>
+  <br>
+  <label for="red">red</label>
+  <input id="red"type="checkbox" name="red">
+  <br>
+  <label for="blue">blue</label>
+  <input id="blue"type="checkbox" name="blue">
+  <br>
+  <label for="yellow">yellow</label>
+  <input id="yellow"type="checkbox" name="yellow">
+  <br>
+  <label for="black">black</label>
+  <input id="black"type="checkbox" name="black">
+  <br>
+  <label for="white">white</label>
+  <input id="white"type="checkbox" name="white">
+  <br>
+</form>
+<br>
+<br>
+<br>
+<form class="style" method="post">
+  <label for="animal" id="qs">FAVORITE ANIMAL (choose one)</label>
+  <br>
+  <label for="dog">dog</label>
+  <input id="dog"type="checkbox" name="dog">
+  <br>
+  <label for="cat">cat</label>
+  <input id="cat"type="checkbox" name="cat">
+  <br>
+  <label for="bird">bird</label>
+  <input id="bird"type="checkbox" name="bird">
+  <br>
+  <label for="raccoon">raccoon</label>
+  <input id="raccoon"type="checkbox" name="raccoon">
+  <br>
+  <label for="walrus">walrus</label>
+  <input id="walrus"type="checkbox" name="walrus">
+  <br>
+</form>
+<br>
+<br>
+<br>
+<form class="style" method="post">
+  <label for="DESSERT" id="qs">FAVORITE DESSERT (choose one)</label>
+  <br>
+  <label for="chocolate mousse">chocolate mousse</label>
+  <input id="chocolate mousse"type="checkbox" name="chocolate mousse">
+  <br>
+  <label for="cake">cake</label>
+  <input id="cake"type="checkbox" name="cake">
+  <br>
+  <label for="ice cream">ice cream</label>
+  <input id="ice cream"type="checkbox" name="ice cream">
+  <br>
+  <label for="fruit">fruit</label>
+  <input id="fruit"type="checkbox" name="fruit">
+  <br>
+  <label for="none">none</label>
+  <input id="none"type="checkbox" name="none">
+  <br>
+</form>
+<br>
+<br>
+<br>
+<form class="style" method="post">
+  <label for="random" id="qs">JUST CHOOSE ONE</label>
+  <br>
+  <label for="potato">potato</label>
+  <input id="potato"type="checkbox" name="potato">
+  <br>
+  <label for="apple">apple</label>
+  <input id="apple"type="checkbox" name="apple">
+  <br>
+  <label for="carrot">carrot</label>
+  <input id="carrot"type="checkbox" name="carrot">
+  <br>
+  <label for="tomato">tomato</label>
+  <input id="tomato"type="checkbox" name="tomato">
+  <br>
+  <label for="oranges">oranges</label>
+  <input id="oranges"type="checkbox" name="oranges">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</form>
+<br>
+<br>
+<br>
+<form class="style" method="post">
+ <button type="button" value="submit to see results" name="SUBMIT" onclick="showInput();"></button>
+</form>
+<br>
 
+<div id="result">
+  <p><span id="user"></span>! <span id="place"></span> Check out other pages for more. </p>
+</div>
 
+<script language="JavaScript">
+    function showInput() {
+        var r = document.getElementById("result");
+        r.style.display = "block";
 
-<script type="JavaScript">
-  function showInput() {
-    document.getElementById("username").innerHTML=
-    document.getElementById('name')
-  }
-
-</script>
+        var totes = 0;
+        if (document.getElementById("red").checked)
+        {
+          totes = totes + 0;
+        }
+        if (document.getElementById("blue").checked)
+        {
+          totes = totes + 5;
+        }
+        if (document.getElementById("yellow").checked)
+        {
+          totes = totes - 1;
+        }
+        if (document.getElementById("black").checked)
+        {
+          totes = totes + 15;
+        }
+        if (document.getElementById("white").checked)
+        {
+          totes = totes + 4;
+        }
+        if (document.getElementById("dog").checked)
+        {
+          totes = totes + 15;
+        }
+        if (document.getElementById("cat").checked)
+        {
+          totes = totes + 5;
+        }
+        if (document.getElementById("bird").checked)
+        {
+          totes = totes - 1;
+        }
+        if (document.getElementById("raccoon").checked)
+        {
+          totes = totes + 4;
+        }
+        if (document.getElementById("walrus").checked)
+        {
+          totes = totes + 0;
+        }
+        if (document.getElementById("chocolate mousse").checked)
+        {
+          totes = totes + 15;
+        }
+        if (document.getElementById("cake").checked)
+        {
+          totes = totes - 1;
+        }
+        if (document.getElementById("ice cream").checked)
+        {
+          totes = totes + 4;
+        }
+        if (document.getElementById("fruit").checked)
+        {
+          totes = totes + 5;
+        }
+        if (document.getElementById("none").checked)
+        {
+          totes = totes + 0;
+        }
+        if (document.getElementById("potato").checked)
+        {
+          totes = totes + 5;
+        }
+        if (document.getElementById("apple").checked)
+        {
+          totes = totes - 1;
+        }
+        if (document.getElementById("carrot").checked)
+        {
+          totes = totes + 15;
+        }
+        if (document.getElementById("tomato").checked)
+        {
+          totes = totes + 4;
+        }
+        if (document.getElementById("oranges").checked)
+        {
+          totes = totes + 0;
+        }
+        if (15 > total > 0) {
+        document.getElementById("place").innerHTML = "You should go to Barbados!";
+        }
+        if (20 > total > 20) {
+        document.getElementById("place").innerHTML = "You should go to Liechtenstein!";
+        }
+        if (30 > total > 30) {
+        document.getElementById("place").innerHTML = "You should go to New York!";
+        }
+        if (40 > total > 40) {
+        document.getElementById("place").innerHTML = "You should go to Oklahoma!";
+        }
+        if (total > 50) {
+        document.getElementById("place").innerHTML = "You should go to Greenland!";
+        }
+      }
+        </script>
 
 
 </html>

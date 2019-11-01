@@ -4,9 +4,20 @@ background-color:skyblue;
 text-align:center;
 font-style: italic;
 }
+
 h3
 {color: black;
 text-align: left;}
 
-image
-{border-style: solid;}
+body {
+  background-color: lightblue;}
+
+#qs{
+  font-size: 25px
+}
+
+#result {
+  font-size: 30px
+  color: black;
+  display: none;
+}
