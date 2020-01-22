@@ -1,0 +1,37 @@
+
+/*background color*/
+body {
+  background-color: #D0EAF2
+}
+/*animations appearance*/
+.animation {
+  width: 100%;
+  font-size: 35px;
+  display: block;
+  margin: auto;
+  padding: inherit;
+  text-align: center;
+  animation-name: change;
+  transition: 3s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+/*animations actions*/
+@keyframes change {
+  0% {color: black;}
+  25% {color: purple;}
+  50% {color: black;}
+  100% {color: purple;}
+}
+/*normal heading size*/
+h1 {
+  font-size: 50px;
+}
+/*heading size once hovered over by your mouse*/
+h1:hover {
+  font-size: 70px;
+}
+/*text shadowing for all h2*/
+h2 {
+  text-shadow: 2px 2px 5px yellow;
+}
